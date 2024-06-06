@@ -1,0 +1,70 @@
+body {
+    color: #efefff;
+    background-color: #1a3323;
+    font-family: "Consolas";
+}
+
+#bg {
+    color: #00000011;
+    top: calc(50% - 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    filter: blur(2px);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#part {
+    margin: 20px;
+    left: 30px;
+    background-color: #00000088;
+    width: 500px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: 3px solid #efefef55;
+    border-radius: 20px;
+}
+
+#part-a {
+    margin-left: 20px;
+    height: fit-content;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: calc(100%-20px);
+    background-color: #ffffff22;
+    border-radius: 10px;
+    border: 3px solid #efefef11;
+}
+
+#pfp {
+    height: 100px;
+    border-radius: 10px;
+    border: 3px solid #efefef22;
+}
+
+#tmglink {
+    color: #2266ee
+}
+
+#part-b {
+    margin-left: 20px;
+    height: fit-content;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: calc(100%-20px);
+    background-color: #ffffff22;
+    border-radius: 10px;
+    border: 3px solid #efefef11;
+}
+
+#ytdnldr {
+    border-radius: 10px;
+    border: 3px solid #efefef22;
+}
+
+#ytdnldr-dnld {
+    color: #2266ee
+}
