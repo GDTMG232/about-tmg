@@ -3,26 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMG</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About TMG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+
+        #link {
+            color: #29f;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #121212;
+            color: #efefef;
+            font-family: "Poppins", sans-serif;
+            transition: background-color 2s ease;
+            overflow: hidden;
+        }
+
+        ::-moz-selection {
+            color: #82ffb2;
+            background-color: #545454;
+        }
+
+        ::selection {
+            color: #82ffb2;
+            background-color: #545454;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #212121;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #323232;
+            border-radius: 20px;
+        }
+
+        .content {
+            backdrop-filter: blur(10px);
+            height: fit-content;
+            width: 500px;
+            max-width: 50%;
+            background-color: #00000066;
+            padding: 20px;
+            border-radius: 20px;
+            border: 3px solid #efefef55;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            filter: blur(0px);
+            transition: opacity 2s ease, filter 2s ease, left 2s ease;
+        }
+
+        #about {
+            text-decoration: underline solid #656565;
+        }
+
+        .image {
+            margin-right: 10px;
+            height: 50px;
+            border-radius: 30px;
+            filter: saturate(0%);
+            transition: filter 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .image:hover {
+            filter: saturate(100%);
+        }
+
+        #bgtext {
+            font-size: 250px;
+            font-weight: 1000;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #82ffb222;
+            filter: blur(10px) invert(0%);
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            transition: color 2s ease, filter 2s ease;
+            text-shadow: #82ffb266 0px 0px 60px
+        }
+
+        br {
+            margin: 1px;
+            color: 20px;
+        }
+
+        .accent {
+            color: #82ffb2;
+        }
+
+        .link {
+            color: #2af;
+            text-decoration: none;
+        }
+
+        #right {
+            height: 60px;
+            filter: blur(0px) invert(100%);
+            position: fixed;
+            left: 75%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            opacity: 1;
+            transition: height 0.2s ease, filter 2s ease, opacity 2s ease, left 0.1s ease;
+        }
+
+        #right:hover {
+            height: 70px;
+        }
+
+        #left {
+            height: 60px;
+            filter: blur(0px) invert(100%);
+            position: fixed;
+            left: 25%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(180deg);
+            cursor: pointer;
+            opacity: 0;
+            transition: height 0.2s ease, filter 2s ease, opacity 2s ease, left 0.1s ease;
+        }
+
+        #left:hover {
+            height: 70px;
+        }
+
+        </style>
 </head>
 <body>
-    <div id="part">
-        <pre id="about">// Me</pre>
-        <div id="part-a">
-            <img src="assets/pfp.jpeg" id="pfp">
-            <br>
-            <a href="https://github.com/GDTMG232" id="tmglink">TMG on GitHub</a><p>I make things using Python most of the time.</p>
+    <div id="backround">
+        <p id="bgtext">TMG</p>
+    </div>
+    <div id="main">
+        
+        <div id="next">
+            <a onclick="nextArea()">
+                <img src="assets/arrow.png" id="right">
+            </a>
+        </div>
+        <div id="previous">
+            <a onclick="previousArea()">
+                <img src="assets/arrow.png" id="left">
+            </a>
+        </div>
+        <div class="content" id="page1"> <!-- First Page | About Me -->
+            <h1 id="about"> 
+                About Me
+            </h1>
+            <p id="description">
+                I program, a lot, and the programming and markup languages I know are HTML, CSS, JS and Python, hence why I could make this simple description website.<br><br>I also make Discord bots with Python.<br>My main project is <a class="accent">Quantum</a>, you can invite him with <a href="https://discord.com/oauth2/authorize?client_id=1196187116569366608&permissions=8&scope=bot" class="link">this link</a>
+            </p><br>
+            <p>Important Links:</p>
+            <div id="buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1196187116569366608&permissions=8&scope=bot">
+                    <img class="image" src="assets/quantum.png" alt="Invite Quantum">
+                </a>
+                <a href="https://discord.gg/3EJs7RvjFR">
+                    <img class="image" src="assets/discord.png" alt="Join my server!">
+                </a>
+                <a href="https://steamcommunity.com/id/TMGFrFr/">
+                    <img class="image" src="assets/steam.png" alt="Friend me on Steam">
+                </a>
+            </div>
+        </div>
+        <div class="content" id="page2"> <!-- Second Page | My Projects -->
+            <h1 id="about"> 
+                My Projects
+            </h1>
+            <p id="description">
+                Especially given I program a lot, I've made a few projects, on my <a href="https://github.com/GDTMG232" class="link">GitHub</a> you'll find things like my YouTube Downloader.
+            </p>
+            <p>Important Links:</p>
+            <div id="buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1196187116569366608&permissions=8&scope=bot">
+                    <img class="image" src="assets/github.png" alt="My Github Profile">
+                </a>
+            </div>
         </div>
     </div>
-    <div id="part">
-        <pre id="about">// My projects</pre>
-        <div id="part-b">
-            <img src="assets/yt downloader.png" id="ytdnldr">
-            <br>
-            <a href="https://github.com/GDTMG232/YouTube-Downloader" id="ytdnldr-dnld">YouTube Downloader on GitHub</a><p>YouTube Downloader</p>
-        </div>
-    </div>
-    <h1 id="bg">smelly green lol</h1>
+    <script>
+        let frame = 0;
+    
+        // Total number of content items minus 1 (because the array is zero-indexed)
+        const items = 1;
+        let itemID = 0;
+    
+        const leftArrow = document.getElementById("left");
+        const rightArrow = document.getElementById("right");
+    
+        function updateArrows() {
+            if (itemID === 0) {
+                leftArrow.style.opacity = 0;
+                leftArrow.removeAttribute('onclick');
+                leftArrow.style.cursor = 'default';
+            } else {
+                leftArrow.style.opacity = 1;
+                leftArrow.setAttribute('onclick', 'previousArea()');
+                leftArrow.style.cursor = 'pointer';
+            }
+            if (itemID === items) {
+                rightArrow.style.opacity = 0;
+                rightArrow.removeAttribute('onclick');
+                rightArrow.style.cursor = 'default';
+            } else {
+                rightArrow.style.opacity = 1;
+                rightArrow.setAttribute('onclick', 'nextArea()');
+                rightArrow.style.cursor = 'pointer';
+            }
+        }
+    
+        function moveItems() {
+            const contents = document.getElementsByClassName("content");
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].style.left = `${(i - itemID) * 100 + 50}%`;
+                contents[i].style.transition = `${contents[i].style.transition.replaceAll(", left 1s ease", "")}, left 2s ease`;
+            }
+        }
+    
+        function nextArea() {
+            console.log("next");
+            itemID = Math.min(itemID + 1, items);
+            updateArrows();
+            animateArrow(rightArrow, '75.2%', '75%');
+            moveItems();
+        }
+    
+        function previousArea() {
+            console.log("previous");
+            itemID = Math.max(itemID - 1, 0);
+            updateArrows();
+            animateArrow(leftArrow, '24.8%', '25%');
+            moveItems();
+        }
+    
+        function animateArrow(arrow, startPos, endPos) {
+            arrow.style.transition = "height 0.2s ease, filter 2s ease, opacity 2s ease";
+            arrow.style.left = startPos;
+            setTimeout(() => {
+                arrow.style.left = endPos;
+                arrow.style.transition = "height 0.2s ease, filter 2s ease, opacity 2s ease, left 1s ease";
+            }, 30);
+        }
+    
+        function incrementFrame() {
+            frame = frame + 1;
+            document.getElementById("bgtext").style.transform = `translateX(-50%) rotate(${Math.sin(frame / 400) * 10}deg)`;
+            window.requestAnimationFrame(incrementFrame);
+        }
+    
+        let doUnfocus = true;
+    
+        if (doUnfocus) {
+            window.addEventListener('blur', function () {
+                document.body.style.backgroundColor = "#000000";
+                blurElements("content", "10px", "0");
+                let bgtext = document.getElementById("bgtext");
+                bgtext.style.filter = "blur(1px)";
+                bgtext.style.color = "#82ffb2dd";
+                blurElement("left", "10px invert(100%)", "0");
+                blurElement("right", "10px invert(100%)", "0");
+            });
+    
+            window.addEventListener('focus', function () {
+                document.body.style.backgroundColor = "#121212";
+                blurElements("content", "0px", "1");
+                let bgtext = document.getElementById("bgtext");
+                bgtext.style.filter = "blur(10px)";
+                bgtext.style.color = "#82ffb222";
+                unblurElement("left");
+                unblurElement("right");
+            });
+        }
+    
+        function blurElements(className, blurValue, opacityValue) {
+            let elements = document.getElementsByClassName(className);
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.filter = `blur(${blurValue})`;
+                elements[i].style.opacity = opacityValue;
+                elements[i].style.transition = "opacity 2s ease, filter 2s ease";
+            }
+        }
+    
+        function blurElement(id, filterValue, opacityValue) {
+            let element = document.getElementById(id);
+            element.style.filter = filterValue;
+            element.style.opacity = opacityValue;
+        }
+    
+        function unblurElement(id) {
+            let element = document.getElementById(id);
+            element.style.filter = "blur(0px) invert(100%)";
+            if ((id === "left" && itemID !== 0) || (id === "right" && itemID !== items)) {
+                element.style.opacity = "1";
+            }
+        }
+    
+        // Initial setup
+        updateArrows();
+        moveItems();
+        window.requestAnimationFrame(incrementFrame);
+    </script>
+    
+    
 </body>
 </html>
