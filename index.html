@@ -87,6 +87,7 @@
         }
 
         #bgtext {
+            height: fit-content;
             font-size: 250px;
             font-weight: 1000;
             position: absolute;
@@ -147,14 +148,23 @@
             height: 70px;
         }
 
+        #footer {
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            transition: font-size 2s ease;
+        }
+
         </style>
 </head>
 <body>
+    <p id="footer">©️ TMG 2024, All Rights Reserved.</p>
     <div id="backround">
         <p id="bgtext">TMG</p>
     </div>
     <div id="main">
-        
         <div id="next">
             <a onclick="nextArea()">
                 <img src="assets/arrow.png" id="right">
@@ -280,6 +290,8 @@
                 let bgtext = document.getElementById("bgtext");
                 bgtext.style.filter = "blur(1px)";
                 bgtext.style.color = "#82ffb2dd";
+                let footer = document.getElementById("footer")
+                footer.style.fontSize = "7px"
                 blurElement("left", "10px invert(100%)", "0");
                 blurElement("right", "10px invert(100%)", "0");
             });
@@ -290,6 +302,8 @@
                 let bgtext = document.getElementById("bgtext");
                 bgtext.style.filter = "blur(10px)";
                 bgtext.style.color = "#82ffb222";
+                let footer = document.getElementById("footer")
+                footer.style.fontSize = "10px"
                 unblurElement("left");
                 unblurElement("right");
             });
