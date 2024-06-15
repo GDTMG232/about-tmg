@@ -249,18 +249,26 @@
             }
         }
     
-        function nextArea() {
+        function nextArea(iskey = false) {
             console.log("next");
-            itemID = Math.min(itemID + 0.5, items)
+            if (iskey) {
+                itemID = Math.min(itemID + 1, items)
+            } else {
+                itemID = Math.min(itemID + 0.5, items)
+            }
             console.log(itemID)
             updateArrows();
             animateArrow(rightArrow, '75.3%', '75%');
             moveItems();
         }
     
-        function previousArea() {
+        function previousArea(iskey = false) {
             console.log("previous");
-            itemID = Math.max(itemID - 0.5, 0)
+            if (iskey) {
+                itemID = Math.max(itemID - 1, 0)
+            } else {
+                itemID = Math.max(itemID - 0.5, 0)
+            }
             updateArrows();
             animateArrow(leftArrow, '24.7%', '25%');
             moveItems();
@@ -332,6 +340,53 @@
             }
         }
     
+        const welp = {
+            "right" : [
+                "ArrowRight", "d"
+            ],
+            "left" : [
+                "ArrowLeft", "a"
+            ]
+        }
+
+        let letters = []
+
+        document.addEventListener("keydown", function(event) {
+            if (welp.left.includes(event.key)) {
+                if (!(itemID === 0)) {
+                    previousArea(true)
+                }
+            }
+            if (welp.right.includes(event.key)) {
+                if (!(itemID === items)) {
+                    nextArea(true)
+                }
+            }
+        })
+
+        document.addEventListener("keypress", function(event) {
+            letters.push(event.key); // Add pressed key to the array
+            
+            if (letters.join('').includes("tmg")) {
+                // Remove all instances of "t", "m", and "g" from the array
+                letters = letters.filter(letter => !["t", "m", "g"].includes(letter));
+                
+                // Play audio file
+                let audio = document.createElement("audio");
+                audio.setAttribute("type", "audio/mpeg");
+                audio.setAttribute("src", `assets/secret${Math.floor((Math.random() * 2)+1)}.mp3`);
+                document.body.appendChild(audio);
+                
+                // Ensure audio starts playing after being appended
+                audio.play();
+
+                // Remove the audio element after it finishes playing
+                audio.onended = function() {
+                    document.body.removeChild(audio);
+                };
+            }
+        });
+
         // Initial setup
         updateArrows();
         moveItems();
