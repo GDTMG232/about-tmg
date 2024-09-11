@@ -9,7 +9,7 @@ I am not taking commissions for coding projects at the moment, and I am focused 
 As stated above, I code, but I also make music and play some games
 
 ## Why do you code?
-<smaller>i never got asked this, mind you</smaller><br>
+<small>i never got asked this, mind you</small><br>
 I just code because I enjoy it and it's a fun pass-time in my opinion
 
 ## What do you code?
