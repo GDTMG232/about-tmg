@@ -16,3 +16,11 @@ I just code because I enjoy it and it's a fun pass-time in my opinion
 In Python, I am currently working on a Discord bot ([invite here](https://discord.com/oauth2/authorize?client_id=1196187116569366608&permissions=8&scope=bot)) and just making silly programs for people to use, like my [YouTube Downloader](https://github.com/gdtmg232/youtube-downloader) and some other projects I use for myself.
 
 I'm learning Java and I've found it relatively fun/easy given I know the basics of most languages, but I'm focused on Java more, *because of minecraft mods lol*.  
+
+<hr>
+
+# Links:
+- [YouTube Downloader](https://github.com/gdtmg232/youtube-downloader)
+
+- [KeyboardSounds](https://github.com/gdtmg232/KeyboardSounds)
+    - [KeyboardSounds Site](https://gdtmg232.github.io/keyboardsounds/)
