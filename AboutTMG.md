@@ -23,4 +23,4 @@ I'm learning Java and I've found it relatively fun/easy given I know the basics 
 - [YouTube Downloader](https://github.com/gdtmg232/youtube-downloader)
 
 - [KeyboardSounds](https://github.com/gdtmg232/KeyboardSounds)
-    - [KeyboardSounds Site](https://gdtmg232.github.io/keyboardsounds/)
+    - [KeyboardSounds Site](https://gdtmg232.github.io/KeyboardSounds/)
