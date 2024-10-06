@@ -25,4 +25,4 @@ I'm learning Java and I've found it relatively fun/easy given I know the basics 
 - [KeyboardSounds](https://github.com/gdtmg232/KeyboardSounds)
     - [KeyboardSounds Site](https://gdtmg232.github.io/KeyboardSounds/)
 
-- [Quantum Website](https://github.com/gdtmg232/Quantum)
+- [Quantum Website](https://gdtmg232.github.io/Quantum)
