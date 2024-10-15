@@ -15,7 +15,7 @@ I just code because I enjoy it and it's a fun pass-time in my opinion
 ## What do you code?
 In Python, I am currently working on a Discord bot ([invite here](https://discord.com/oauth2/authorize?client_id=1196187116569366608)) and just making silly programs for people to use, like my [YouTube Downloader](https://github.com/gdtmg232/youtube-downloader) and some other projects I use for myself.
 
-I'm learning Java and I've found it relatively fun/easy given I know the basics of most languages, but I'm focused on Java more, *because of minecraft mods lol*.  
+I'm learning C# because of the fact I already know Python and JavaScript, and given that, I'd like to start Game Development soon enough, along with making actual apps with GUIs with C#.
 
 <hr>
 
