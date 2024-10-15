@@ -26,3 +26,8 @@ I'm learning Java and I've found it relatively fun/easy given I know the basics 
     - [KeyboardSounds Site](https://gdtmg232.github.io/KeyboardSounds/)
 
 - [Quantum Website](https://gdtmg232.github.io/Quantum)
+
+<hr>
+
+## This Site's Repo
+- [GitHub - GDTMG232 - about-tmg](https://github.com/GDTMG232/about-tmg)
