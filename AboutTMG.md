@@ -1,33 +1,29 @@
 # About TMG
 
-##  Hi there!
-My name is TMG, I do coding projects in Python and JavaScript, and I am learning Java, I'm more-or-less focused on Python with my [Discord Bot](https://discord.com/oauth2/authorize?client_id=1196187116569366608) but that's besides the point. 
+**I code.**
 
-I am not taking commissions for coding projects at the moment, and I am focused on my own projects and I am able to talk to you if you'd like to learn how to code in Python, you can join [My Discord Server](https://discord.gg/3EJs7RvjFR) if you'd like to talk to me personally.
+I dive into Python, JS, TS, and I’m picking up C# to get into .NET and game dev with Unity. Been at it for 3 years with Python, 1 year with JS, and 4 months with TS.
 
-## What do you do?
-As stated above, I code, but I also make music and play some games
+## My Projects
 
-## Why do you code?
-<small>i never got asked this, mind you</small><br>
-I just code because I enjoy it and it's a fun pass-time in my opinion
+Check out my projects below! I’m particularly pumped about **Quantum**, my Discord Bot. You can learn all about it on its dedicated site ([Quantum Website](https://gdtmg232.github.io/Quantum)), which covers what it does, the commands you can use, and how to reach me for support.
 
-## What do you code?
-In Python, I am currently working on a Discord bot ([invite here](https://discord.com/oauth2/authorize?client_id=1196187116569366608)) and just making silly programs for people to use, like my [YouTube Downloader](https://github.com/gdtmg232/youtube-downloader) and some other projects I use for myself.
+***Heads up: this website will be getting some upgrades soon!***
 
-I'm learning C# because of the fact I already know Python and JavaScript, and given that, I'd like to start Game Development soon enough, along with making actual apps with GUIs with C#.
-
-<hr>
+---
 
 # Links:
-- [YouTube Downloader](https://github.com/gdtmg232/youtube-downloader)
 
-- [KeyboardSounds](https://github.com/gdtmg232/KeyboardSounds)
+- [YouTube Downloader](https://github.com/gdtmg232/youtube-downloader) - "*Download YouTube Videos without sketchy websites*"
+
+- [KeyboardSounds](https://github.com/gdtmg232/KeyboardSounds) - "*Lets you play any sound when pressing keys on your keyboard*"
+
     - [KeyboardSounds Site](https://gdtmg232.github.io/KeyboardSounds/)
 
-- [Quantum Website](https://gdtmg232.github.io/Quantum)
+- [Quantum Website](https://gdtmg232.github.io/Quantum) - "*My Discord Bot*"
 
-<hr>
+---
 
-## This Site's Repo
+## This Site's GitHub Repository
+
 - [GitHub - GDTMG232 - about-tmg](https://github.com/GDTMG232/about-tmg)
